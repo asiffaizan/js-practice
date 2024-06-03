@@ -4,8 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>String Methods and Properties</title>
+    <style>
+      table {
+        width: 90%;
+        border-collapse: collapse;
+        margin: 1rem;
+      }
+      th{
+        text-align: left;
+      }
+    </style>
   </head>
   <body style="font-family: cursive">
     <h1>String Methods and Properties</h1>
@@ -22,26 +32,84 @@
       <li><code>length</code></li>
     </ul>
     <h2>Methods (Without Argument)</h2>
-    <ul>
-      <li><code>toUpperCase()</code></li>
-      <li><code>toLowerCase()</code></li>
-      <li><code>trim()</code></li>
-      <li><code>trimStart()</code></li>
-      <li><code>trimEnd()</code></li>
-    </ul>
+    <table>
+      <tr>
+        <th>Topics</th>
+        <th >Description</th>
+      </tr>
+      <tr>
+        <td><li><code>toUpperCase() </code></li></td>
+        <td>  <small> it's transform letters to Uppercase</small></td>
+      </tr> 
+      <tr>
+        <td><li><code>toLowerCase() </code></li></td>
+        <td>  <small> it's transform letters to Lowercase</small></td>
+      </tr>
+      <tr>
+        <td><li><code>trim() </code></li></td>
+        <td>  <small> it's remove all space from start to end </small></td>
+      </tr>
+      <tr>
+        <td><li><code>trimStart() </code></li></td>
+        <td>  <small> it's remove all space from start </small></td>
+      </tr>
+      <tr>
+        <td><li><code>trimEnd() </code></li></td>
+        <td>  <small> it's remove all space from end </small></td>
+      </tr>  
+    </table>
+
     <h2>Methods (With Argument)</h2>
-    <ul>
-      <li><code>includes()</code></li>
-      <li><code>indexOf()</code></li>
-      <li><code>replace()</code></li>
-      <li><code>replaceAll()</code></li>
-      <li><code>concat()</code></li>
-      <li><code>padStart()</code></li>
-      <li><code>padEnd()</code></li>
-      <li><code>charAt()</code></li>
-      <li><code>charCodeAt()</code></li>
-      <li><code>split()</code></li>
-    </ul>
+    <table>
+      <tr>
+        <th>Topics</th>
+        <th >Description</th>
+      </tr>
+      <tr>
+        <td><li><code>includes()</code></li></td>
+        <td>  <small> it's checks, is there have any character which we want to find? </small></td>
+      </tr>   
+      <tr>
+        <td><li><code>indexOf()</code></li></td>
+        <td>  <small> it's shows us the first match characters index. </small></td>
+      </tr>
+      <tr>
+        <td><li><code>replace()</code></li></td>
+        <td>  <small> it's replace a particular thing which we want to replace. </small></td>
+      </tr>
+      <tr>
+        <td><li><code>replaceAll()</code></li></td>
+        <td>  <small> it's replace all matching characters. </small></td>
+      </tr>
+      <tr>
+        <td><li><code>concat()</code></li></td>
+        <td>  <small> it's add multiple strings. </small></td>
+      </tr>
+      <tr>
+        <td><li><code>padStart()</code></li></td>
+        <td>  <small> it's pads a string from the start like '789'.Exp: padStart(12,'*') = (*********789)</small></td>
+      </tr>
+      <tr>
+        <td><li><code>padEnd()</code></li></td>
+        <td>  <small> it's pads a string from the end like '789'.Exp: padEnd('*',12) = (789*********) </small></td>
+      </tr>
+      <tr>
+        <td><li><code>charAt()</code></li></td>
+        <td>  <small> it's provides a character of a particular index. Exp: 'Hello Faizan'.charAt(7) = a</small></td>
+      </tr>
+      <tr>
+        <td><li><code>charCodeAt()</code></li></td>
+        <td>  <small> it's provide a ascii code of a character. Exp: 'Hello'.charCodeAt(2)= 108;which is a ascii code of small l. </small></td>
+      </tr>
+      <tr>
+        <td><li><code>split()</code></li></td>
+        <td>  <small> it's split a string into an array. Exp: 'Hello Faizan'.split(' ') = ['Hello','Faizan']. basically its remove the argument which one is pass and convert it intu a array, basis on space. </small></td>
+      </tr>   
+      <tr>
+        <td><li><code>slice()</code></li></td>
+        <td>  <small> it's slice a string. Exp: 'Hello Faizan'.slice(6,12) = Faizan </small></td>
+      </tr>
+    </table>
     <p>
       <a
         href="https://www.w3schools.com/jsref/jsref_obj_string.asp"
